@@ -52,4 +52,5 @@ NeoPixel goes blue and you're transmitting data.
 1. Do you have an Amazon Echo, Tap, Dot, or other Alexa-powered device? Check out the [Lambda function](https://github.com/calittle/pooltoys/tree/master/alexa-skill) I built for interfacing to the AIO data. You can take this and whip up your own Alexa Skill and deploy it to your device. Note: there is a _lot_ more involved in this than is alluded to in the Lambda code -- consider yourself warned. I make come back and document that part at some point... 
 1. Create an AIO dashboard so you can see your temperature readings over time, like so. really my pool doesn't have a 20 degree temperature swing, I just brought the sensor inside so I could take pictures :-)
 ![dashboard](https://raw.githubusercontent.com/calittle/pooltoys/master/img/dashboard.png)
+
 Have fun!
