@@ -11,3 +11,4 @@ Adafruit CircuitPython OneWire library
 Adafruit CircuitPython DS18X20 library
 
 """
+print ('Crap, I need to go get the box and plug it back in to download the source code!')
