@@ -7,6 +7,7 @@ A small Arduino-based microcontroller that periodically reads the temperature fr
 # How To
 Until I have time to properly document this, review the schematic, source code (code.py) and this simple list:
 1. Build the circuit. 
+![schematic](https://raw.githubusercontent.com/calittle/pooltoys/master/circuit/schematic.png)
 1. Create your io.adafruit.com account.
 1. Modify code.py with your adafruit account key.
 1. Modify secret.py with your wifi connection information
