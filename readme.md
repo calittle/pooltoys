@@ -21,7 +21,6 @@ Here you can see the terminal board, which shows the left side wiring from the s
 The JST connection is connected via hookup wires as black/black/GND pin, red/red/3.3V pin, and green/yellow/Digital 2 pin as shown in here:
 ![metro wiring](https://raw.githubusercontent.com/calittle/pooltoys/master/img/metro.jpg)
 
-
 # Software
 If you've never acclimated yourself to CircuitPython or Python in general, then you've come to the right place! Only because I have a link to [CircuitPython](https://learn.adafruit.com/welcome-to-circuitpython/what-is-circuitpython) so someone else can tell you. I don't have time for that. So, [download Mu](https://learn.adafruit.com/welcome-to-circuitpython/installing-mu-editor), [install CircuitPython](https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython) if necessary and [try a Hello, World!](https://learn.adafruit.com/welcome-to-circuitpython/creating-and-editing-code) program. Before you move on, you should have wired up your parts and have successfully run the blink program. Now you're ready to rock.
 
@@ -48,6 +47,9 @@ Yes, I'm sure you thought we were done with fabrication, but sadly we are not. W
 Take this puppy outside, dunk the sensor in your skimmer box or over the side of the pool, or where ever might be good. Wear rubber shoes and connect the power to the box and hopefully your 
 NeoPixel goes blue and you're transmitting data.
 
-# To Do
+# Fun Explorations To Try...
 1. Wire up a PV cell to a charging circuit for resuppling precious volts to a LiPo battery for powering the Metro.
-1. Get the Alexa skill working with authorization to Adafruit so you can individually personalize the skill to your settings rather than mine ;-)
+1. Get the Alexa skill working with authorization to Adafruit so you can individually personalize the skill to your settings rather than mine ;-) Ok really this is more on my to-do list, but you could just take the Lamdba function and add in your own details about AIO.
+1. Create an AIO dashboard so you can see your temperature readings over time, like so. really my pool doesn't have a 20 degree temperature swing, I just brought the sensor inside so I could take pictures :-)
+![dashboard](https://raw.githubusercontent.com/calittle/pooltoys/master/img/dashboard.png)
+Have fun!
