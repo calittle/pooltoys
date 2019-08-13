@@ -13,7 +13,7 @@ Ok, so before you move on, you will need:
 1. [Cable Gland, PG7](https://www.adafruit.com/product/762) You'll need at least one of these. But get a few because they are cheap. You might also want a few sizes. PG7 will fit the temperature sensor cable. Depending on how you power your Arduino board you might need some additional glands of varying sizes. I'll leave that up to you. Just know that you are not going to be powering this thing with a battery unless it's a very large battery.
 
 # Hardware
-Build the circuit according to the simple schematic below. I have zero knowledge of how to draw a proper schematic and while I could bother myself with getting fancy, this is all I can muster. ![schematic](https://raw.githubusercontent.com/calittle/pooltoys/master/circuit/schematic.png). 
+Build the circuit according to the simple schematic below. I have zero knowledge of how to draw a proper schematic and while I could bother myself with getting fancy, this is all I can muster. ![schematic](https://raw.githubusercontent.com/calittle/pooltoys/master/circuit/schematic.png) 
 Here you can see the ![terminal board](https://raw.githubusercontent.com/calittle/pooltoys/master/img/terminal.jpg) which shows the left side wiring from the sensor (red/black/yellow) into the wiring block, and the JST connection on the right. The JST connection is connected via hookup wires as black/black/GND pin, red/red/3.3V pin, and green/yellow/Digital 2 pin as shown in here. ![metro wiring](https://raw.githubusercontent.com/calittle/pooltoys/master/img/metro.jpg)
 
 
