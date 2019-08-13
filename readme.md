@@ -23,7 +23,7 @@ If you've gotten this far, good. Now obtain a waterproof project box that will f
 1. Seal the box.
 
 Take this puppy outside, dunk the sensor in your skimmer box or over the side of the pool, or where ever might be good. Wear rubber shoes and connect the power to the box and hopefully your 
-NuPixel goes blue and you're transmitting data.
+NeoPixel goes blue and you're transmitting data.
 
 # To Do
 1. Wire up a PV cell to a charging circuit for resuppling precious volts to a LiPo battery for powering the Metro.
