@@ -52,4 +52,5 @@ NeoPixel goes blue and you're transmitting data.
 1. Get the Alexa skill working with authorization to Adafruit so you can individually personalize the skill to your settings rather than mine ;-) Ok really this is more on my to-do list, but you could just take the Lamdba function and add in your own details about AIO.
 1. Create an AIO dashboard so you can see your temperature readings over time, like so. really my pool doesn't have a 20 degree temperature swing, I just brought the sensor inside so I could take pictures :-)
 ![dashboard](https://raw.githubusercontent.com/calittle/pooltoys/master/img/dashboard.png)
+
 Have fun!
