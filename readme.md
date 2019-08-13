@@ -14,7 +14,12 @@ Ok, so before you move on, you will need:
 
 # Hardware
 Build the circuit according to the simple schematic below. I have zero knowledge of how to draw a proper schematic and while I could bother myself with getting fancy, this is all I can muster. ![schematic](https://raw.githubusercontent.com/calittle/pooltoys/master/circuit/schematic.png) 
-Here you can see the ![terminal board](https://raw.githubusercontent.com/calittle/pooltoys/master/img/terminal.jpg) which shows the left side wiring from the sensor (red/black/yellow) into the wiring block, and the JST connection on the right. The JST connection is connected via hookup wires as black/black/GND pin, red/red/3.3V pin, and green/yellow/Digital 2 pin as shown in here. ![metro wiring](https://raw.githubusercontent.com/calittle/pooltoys/master/img/metro.jpg)
+
+Here you can see the terminal board, which shows the left side wiring from the sensor (red/black/yellow) into the wiring block, and the JST connection on the right.
+![terminal board](https://raw.githubusercontent.com/calittle/pooltoys/master/img/terminal.jpg)  
+
+The JST connection is connected via hookup wires as black/black/GND pin, red/red/3.3V pin, and green/yellow/Digital 2 pin as shown in here:
+![metro wiring](https://raw.githubusercontent.com/calittle/pooltoys/master/img/metro.jpg)
 
 
 # Software
