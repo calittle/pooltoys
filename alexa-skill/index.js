@@ -41,7 +41,7 @@ const hotPhrases = [
     'wow it\'s practically a hot tub...',
     'a bit on the hot side...maybe you should remove the cover or turn down the heater...',
     'if you like it hot, then it\'s definitely ready...',
-    'it\'s like a hot tub in here...anyone have a time machine?',
+    'it\'s like a hot tub in here...who\'s up for time travel?',
     'you can probably sous vide a protein in the pool right now..',
     'it\'s too warm for kids, senior citizens, or people with heart conditions...'
 ];
