@@ -9,7 +9,11 @@ const Alexa = require('ask-sdk-core');
 var https = require('https');
 const servicePort = 443;
 const serviceHost = 'io.adafruit.com';
-const servicePath = '/api/v2/fenbranklin/feeds/tsfeed/data';
+const servicePath = '/api/v2/<adafruit user name>/feeds/<feed_name>/data';
+// you can also use /data/retain to grab only the last data point.
+// that would be faster, especially if you have significant data.
+// but keep in mind that the retain only sends the data, not the metadata
+// so you won't have the detail about the timestamps for comparison...
 
 const nicePhrases = [
     'perfect time for a dip...',
@@ -47,19 +51,20 @@ function getQualifierForTemp( theTemp ) {
     var hotRand = Math.floor(Math.random()*hotPhrases.length);
     var niceRand = Math.floor(Math.random()*nicePhrases.length);
     var res = 'The pool is ' + theTemp + ' degrees,';
-    
+    // These temps are what my wife likes.
     if (theTemp >= 89 & theTemp <= 92) {
         res += nicePhrases[niceRand];
-
+    // at this point it's basically a hot tub. Ugh.	
     }else if(theTemp >= 93){
         res += hotPhrases[hotRand];
-        
+    // this is what most people like.
     }else if(theTemp >= 85 & theTemp <= 89){
         res += okPhrases[okRand];
-        
+    // only for Canadians.
     }else if(theTemp <85){
         res += coolPhrases[coolRand];
     }else{
+	// something wrong happens if you get here. Like, terribly, horribly wrong.
         res = 'I don\'t know what to think about that temperature...';
     }
     return res;
@@ -98,7 +103,6 @@ function parseResponse ( responseData ){
 					r += ' reported recently.';
 				}				
 			}
-
 		}
 	}
 	catch( error ){
@@ -107,8 +111,6 @@ function parseResponse ( responseData ){
 	finally{
 		return r;
 	}
-    
-    
 }
 
 function doGetPoolTemp( userHost, userPath, userPort ) {
