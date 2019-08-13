@@ -70,10 +70,9 @@ wifi = adafruit_esp32spi_wifimanager.ESPSPI_WiFiManager(esp, secrets, status_lig
 while True:
     try:
         print("Posting data...", end='')
-        feed = 'tsfeed'
         payload = {'value': doGetTemp( ts ) }
         response = wifi.post(
-            "https://io.adafruit.com/api/v2/"+secrets['aio_username']+"/feeds/"+feed+"/data",
+            "https://io.adafruit.com/api/v2/"+secrets['aio_username']+"/feeds/"+secrets['aio_feed']+"/data",
             json=payload,
             headers={"X-AIO-KEY":secrets['aio_key']})
         print(response.json())
