@@ -15,12 +15,20 @@ const servicePath = '/api/v2/<adafruit user name>/feeds/<feed_name>/data';
 // but keep in mind that the retain only sends the data, not the metadata
 // so you won't have the detail about the timestamps for comparison...
 
+const terriblePhrases =[
+    'it\'s not ok right now...',
+    'this is not a time to be in the water...',
+    'i would think twice about swimming right now...',
+    'it doesn\'t seem like a good time to swim...',
+    'this is probably not the right time to swim...',
+    'hmm... have you considered a good book instead?'
+    ];
 const nicePhrases = [
     'perfect time for a dip...',
     'should be a nice swim...',
     'it sounds inviting...',
     'grab some sunscreen and hit the water...',
-    'get a Tap, start your playlist and jump in...'
+    'get a Tap, start your playlist, and jump in...'
 ];
 const okPhrases = [
     'nice and refreshing...',
@@ -41,7 +49,6 @@ const hotPhrases = [
     'wow it\'s practically a hot tub...',
     'a bit on the hot side...maybe you should remove the cover or turn down the heater...',
     'if you like it hot, then it\'s definitely ready...',
-    'it\'s like a hot tub in here...who\'s up for time travel?',
     'you can probably sous vide a protein in the pool right now..',
     'it\'s too warm for kids, senior citizens, or people with heart conditions...'
 ];
@@ -51,6 +58,7 @@ function getQualifierForTemp( theTemp ) {
     var coolRand = Math.floor(Math.random()*coolPhrases.length);
     var hotRand = Math.floor(Math.random()*hotPhrases.length);
     var niceRand = Math.floor(Math.random()*nicePhrases.length);
+    var terribleRand = Math.floor(Math.random()*terriblePhrases.length);
     var res = 'The pool is ' + theTemp + ' degrees,';
     // These temps are what my wife likes.
     if (theTemp >= 89 & theTemp <= 92) {
@@ -66,7 +74,7 @@ function getQualifierForTemp( theTemp ) {
         res += coolPhrases[coolRand];
     }else{
 	// something wrong happens if you get here. Like, terribly, horribly wrong.
-        res = 'I don\'t know what to think about that temperature...';
+        res += terriblePhrases[terribleRand];
     }
     return res;
 }
@@ -155,7 +163,7 @@ const LaunchRequestHandler = {
         console.log(response);
         return handlerInput.responseBuilder
             .speak(response)
-            .reprompt('Need any more information about your pool?')
+            //.reprompt('Need any more information about your pool?')
             .getResponse();
     },
 };
@@ -172,7 +180,7 @@ const PoolIntentHandler = {
         console.log(response);
         return handlerInput.responseBuilder
             .speak(response)
-            .reprompt('Need any more information about your pool?')
+            //.reprompt('Need any more information about your pool?')
             .getResponse();
     },
 
